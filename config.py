@@ -10,7 +10,7 @@ class Config:
     FLASKY_MAIL_SENDER = 'lpk0628@163.com'
     FLASKY_ADMIN = '763409282@qq.com'
     BOOTSTRAP_SERVE_LOCAL = True
-
+    FLASKY_POST_PER_PAGE = 10
     MAIL_SERVER = 'smtp.163.com'
     MAIL_PORT = 25
     MAIL_USE_TLS = True
