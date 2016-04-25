@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="29b6bfd7-80e5-4cb6-a3d8-8480b6a6e058" name="datwobee" url="http://www.datwobee.com">
+        <fileTransfer host="www.datwobee.com" port="22" rootFolder="/home/ubuntu" accessType="SFTP" username="ubuntu">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

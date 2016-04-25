@@ -39,7 +39,7 @@ class EditProfileAdminForm(Form):
         self.user = user
 
     def validate_email(self, field):
-        if field.data != self.user and \
+        if field.data != self.user.email and \
                 User.query.filter_by(email=field.data).first():
             raise ValidationError('Email already registered.')
 
@@ -51,4 +51,9 @@ class EditProfileAdminForm(Form):
 
 class PostForm(Form):
     body = PageDownField("What's on your mind?", validators=[DataRequired()])
+    submit = SubmitField('Submit')
+
+
+class CommentForm(Form):
+    body = PageDownField('Enter your comment', validators=[DataRequired()])
     submit = SubmitField('Submit')
